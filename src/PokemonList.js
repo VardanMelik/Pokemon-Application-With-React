@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PakemonList({pokemon}) {
+function PokemonList({pokemon}) {
     return(
         <div>
             {pokemon.map(p => (
@@ -9,4 +9,4 @@ function PakemonList({pokemon}) {
         </div>
     )
 }
-export default PakemonList
+export default PokemonList
