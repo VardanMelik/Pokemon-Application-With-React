@@ -3,9 +3,11 @@ import React from 'react'
 function PokemonList({pokemon}) {
     return(
         <div>
-            {pokemon.map(p => (
-                <div key={p}>{p}</div>
-            ))}
+            <ul>
+                {pokemon.map(p => (
+                    <li className="list-group-item" key={p}>{p}</li>
+                ))}
+            </ul>
         </div>
     )
 }

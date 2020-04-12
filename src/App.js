@@ -36,13 +36,13 @@ function App() {
   if (loading) return "Loading..."
   
   return (
-    <>
+    <div className="container">
       <PokemonList pokemon={pokemon} />
       <Pagination
         gotoNextPage={nextPageUrl ? gotoNextPage : null}
         gotoPrevPage={prevPageUrl ? gotoPrevPage : null}
       />
-    </>
+    </div>
   );
 }
 
